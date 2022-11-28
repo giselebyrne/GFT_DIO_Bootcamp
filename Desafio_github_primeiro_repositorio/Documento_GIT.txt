@@ -1,1 +1,3 @@
-Arquivo Teste de Github para Primeiro Repositório!!
+### Repositório criado para o Bootcamp GFT Quality Assurance para Mulheres em parceria com a Plataforma de Ensino DIO.
+
+#### Esse repositório também faz parte da entrega do Desafio de Projeto - Criando seu primeiro repositório no GitHub para compartilhar seu progresso.
