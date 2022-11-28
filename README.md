@@ -4,7 +4,8 @@ Repositório criado para o BootCamp GFT Quality Assurance para Mulheres - DIO
 
 
 ### **Links Úteis**
-[Sintaxe Básica Markdown](https://markdownguide.org/basic-syntax/)
+> [Plataforma de Ensino DIO](https://www.dio.me/)
+> [Sintaxe Básica Markdown](https://markdownguide.org/basic-syntax/)
 
 ### **Módulos do Bootcamp**
 - Prepare-se para a Jornada (Onboarding)
