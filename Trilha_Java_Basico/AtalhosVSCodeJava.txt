@@ -4,8 +4,9 @@ Comentar = CTRL + K | CTRL + C
 Identar um trecho de código = ALT + SHIFT + F
 
 2. Atalhos no VS Code para JAVA
-main + Enter
-sysout + Enter
+main + Enter = Class main
+sysout + Enter ou sout + Enter = System.out.print("");
+iter + Enter  = For
 
 
 

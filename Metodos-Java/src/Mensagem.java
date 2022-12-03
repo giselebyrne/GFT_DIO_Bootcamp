@@ -9,18 +9,12 @@ public class Mensagem {
         System.out.println("Informe o Horário: ");
         int horario = scan.nextInt();
 
-        if (horario >= 1) {
-            if (horario <= 12) {
+        if (horario >= 1 && horario <= 12) {            
                 System.out.println("Bom dia");
-            }
-        } if (horario > 12) {
-            if (horario <= 18) {
+            } else if (horario > 12 && horario <= 18){
                 System.out.println("Boa Tarde");
-            }
-        } if (horario > 18) {
-            if (horario <= 24) {
+        } else if (horario > 18 && horario <= 24) {           
                 System.out.println("Boa Noite");
-            }
         } 
         
         // else {
