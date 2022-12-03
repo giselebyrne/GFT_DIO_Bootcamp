@@ -1,0 +1,36 @@
+Lógica Condicional e Controle de Fluxo
+
+1. Operadores Relacionais
+Tipos:
+Similaridade
+Igualdade ==
+Diferença !=
+
+Tamanho
+Maior >
+Maiorigual >=
+Menor <
+Menor igual <=
+
+2. Operadores Lógicos
+Tipos:
+Conjunção && (and/e)
+Disjunção || (or/ou)
+Disjunção Exclusiva ^ (Operação só é verdadeira quando ambos os operandos ou expressões são opostos) (xor)
+Negação ! (inversão)
+
+3. Controle de Fluxos
+Tipos:
+Decisão if, if-else, if-else-if, switch e Operador Ternário
+	Ternário Exemplo: condição ? true : false;
+Repetição for, while, do while
+Interrupção break, continue e return
+
+4. Blocos
+Tipos:
+Locais - Dentro de Métodos
+Estáticos - Dentro da Classe
+Instância - Dentro da Classe
+
+
+Obs: Operadores bitwise (& e |) e shift (~, >>,>>>,<<) (Muito baixo nível, pouco usados)
