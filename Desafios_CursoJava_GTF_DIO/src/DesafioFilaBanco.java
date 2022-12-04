@@ -13,7 +13,7 @@ public class DesafioFilaBanco {
 
     for( int i = 0; i < nomesFila.length; i++){
         nomesFila[i] = nome.next();
-        System.out.println("%s - esta na posicao: %d%n", nomesFila[i], (i+1));
+        System.out.print("%s - esta na posicao: %d%n", nomesFila[i], (i+1));
         }
         
     // Possibilidade de Resolução com entrada dos nomes pelo teclado:    
