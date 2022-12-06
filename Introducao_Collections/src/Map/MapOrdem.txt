@@ -1,9 +1,9 @@
 Map Ordem
 
-[ ] class Livro - nome e qtdPaginas
-[ ] new HashMap()
-[ ] new LinkedHashMap()
-[ ] new TreeMap()
-[ ] new TreeSet()
-[ ] addAll
-[ ] new ComparatorNomeLivro()
+[x] class Livro - nome e qtdPaginas
+[x] new HashMap()
+[x] new LinkedHashMap()
+[x] new TreeMap()
+[] new TreeSet()
+[] addAll
+[] new ComparatorNomeLivro()
