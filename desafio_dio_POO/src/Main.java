@@ -1,6 +1,9 @@
 import java.time.LocalDate;
 
+import br.com.dio.desafio.dominio.Bootcamp;
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
 public class Main {
@@ -17,14 +20,55 @@ public class Main {
         curso2.setDescricao("curso Js");
         curso2.setCargaHoraria(4);
 
-        Mentoria mentoria1 = new Mentoria();
-        mentoria1.setTitulo("mentoria de Java");
-        mentoria1.setDescricao("mentoria de Java");
-        mentoria1.setData(LocalDate.now());
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("mentoria de Java");
+        mentoria.setDescricao("mentoria de Java");
+        mentoria.setData(LocalDate.now());
+
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Java Developer");
+        bootcamp.setDescricao("Bootcamp Java Developer");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria);
+
+        Dev devGisele = new Dev();
+        devGisele.setNome("Gisele Byrne");
+        devGisele.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos Gisele: " + devGisele.getConteudosInscritos());
+
+        devGisele.progredir();
+        System.out.println("-----");
+
+        System.out.println("Contudos Inscritos Gisele: " + devGisele.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos Gisele: " + devGisele.getConteudosConcluidos());
+
+        System.out.println("Total de XP Gisele: " + devGisele.calcularTotalXp());
+
+        System.out.println("--------------------");
+
+        Dev devJoao = new Dev();
+        devJoao.setNome("Joao Cardoso");
+        devJoao.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos Joao: " + devJoao.getConteudosInscritos());
+
+        devJoao.progredir();
+        devJoao.progredir();
+        devJoao.progredir();
+        System.out.println("-----");
+
+        System.out.println("Conteudos Inscritos Joao: " + devJoao.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos Joao: " + devJoao.getConteudosConcluidos());
+
+        System.out.println("Total de XP do Dev Joao: " + devJoao.calcularTotalXp());
         
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria1);
+        // System.out.println(curso1);
+        // System.out.println(curso2);
+        // System.out.println(mentoria);
+
+        // Polimorfismo - Tudo que tem em Conteudo tem em Curso. Mas nem tudo que tem em Curso tem em Conteudo
+        // É possivel pq Conteudo é mãe de Curso
+        // Exemplo de Polimorfismo: Conteudo conteudo = new Curso();
         
     }
     
