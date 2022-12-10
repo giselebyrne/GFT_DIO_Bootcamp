@@ -1,0 +1,105 @@
+Gerenciamento de Dependências e Build em Java com Maven
+Instrutor: Willyan Caetano
+
+Maven: 
+É uma ferramenta para gerenciar build e dependências de um projeto.
+1. O maven endereça como o software foi construído e suas dependências através do POM(Project Object Model)
+2. Facilita a compreensão do Desenvolvedor
+3. Fornece informações de Qualidade
+
+Instalação no Windows:
+1. Fazer o download do Maven em https://maven.apache.org/ 
+2. Configurar a Variável Path
+3. Acessar a pasta que deseja criar o Projeto Maven pelo Terminal
+4. Digitar o seguinte comando: 
+ -> mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-maven -Darchetype=maven-archetype-quickstart -DinteractiveMode=false
+
+Comandos Básicos:
+Compilar: mvn compile
+Testar: mvn test
+Empacotar:mvn package
+Limpar diretório de trabalho: mvn clean
+
+Criando Diferentes tipos de Projeto com o Apache Maven
+Maven Archetype é um Template que possibilita a personalização e configuração de como um projeto será construido.
+Pesquisar sobre "Maven Archetype List" e suas instruções de Execução.
+Site: mvn repository
+
+POM - Project Object Maven
+Arquivo em formato XML, detalha o projeto e etc
+
+Repositórios:
+Locais (local e remoto) onde podemos encontrar plugins e Bibliotecas que o maven provê.
+
+Adicionando Dependências:
+1. Arquivo POM>Xml
+2. Adicionar a Tag <dependencies></dependencies>
+3. Adicionar a tag <denpendecy></denpendecy>
+ 3.1 - groupId
+ 3.2 - artefactId
+ 3.3 - version
+
+Tipos de Dependências:
+Foi utilizado como exemplo um Projeto 'Componente', esse componente foi instalado no repositório local atráves do comando 'mvn install'. 
+Agora esse componente pode ser utilizado por qualquer outro projeto. 
+O projeto que utilizou o 'Componente' tb herda as suas dependencias, o problema é que o projeto não utiliza todas as dependências herdadas de 'Componentes'
+
+No Maven existe dois tipos de dependências:
+1. Direta - Dependências declaras no pom.xml
+2. Transitiva - Dependências obrigatórias dos Componentes que foram adicionadas ao Projeto. Que são as Dependências declaradas no pom.xml do Componente.
+
+Transitividade e Escopo:
+** Dependências Transitivas são um problema. Pq se adicionar muitos componentes ao Projeto, vai sobrecarregar o projeto com muitas Dependências herdadas.
+*** ClassPath - Referência que a aplicação tem para o momento de execução (Runtime, Teste e Compile)
+
+Tipos de Escopos:
+1. Compile - Quando não se define um escopo, automaticamente o Projeto trata como Compile. (Esse escopo é que ocasiona o problema da Dependência Transitiva)
+2. Provided - A dependência é fornecida em tempo de Execução. A provided é adicionado no ClassPath usando para compilação(compile) e teste(test). E não é transitiva
+3. Runtime - Indica que a dependência é necessária para execução e não para Compilação. O maven inclui no classpath para runtime e test.
+4. Test - Disponivel somente para compilação e execução de Testes. Não é transitória.
+5. System - Similar ao escopo provided exceto por ser necessário prover o JAR explicitamente. É adicionado no Classpath usado para compilação(compile) e teste(test).E não transitiva.
+Tem que usar a tag <systemPath></systemPath> para informar a localização do jar.
+6. Import - É disponivel apenas com uma dependência do tipo pom e com a tag <dependencyManagement></dependencyManagement>
+Indica um processo de reutiliza(importar) dependências de um outro projeto. 
+
+Classpath comandos:
+mvn dependency:buil-classpath -DincludeScope=compile
+mvn dependency:buil-classpath -DincludeScope=test
+mvn dependency:buil-classpath -DincludeScope=runtime
+
+Dependências Opcionais:
+Utiliza a tag <optional></optional>
+
+Dependências Exclusions
+Utilizado quando o componente que você usa compartilha uma biblioteca que você já tem ou não quer ter disponível.
+
+Cenário: Supondo que não temos acesso ao pom.xml do componente para incluir um optional. Com a exclusions resolvemos esse problema.
+Implementação no Projeto: 
+Dentro da tag 'Dependecy incluir ->
+<exclusions>
+	<exclusion>
+		Informar o groupId e artefactId que deseja fazer a exclusão!
+	</exclusion>
+<exclusions>   
+
+Maven Build Lifecycle: 
+Ciclo de Vida de Construção
+Composto por 3 ciclos de vida
+Cada ciclo possui fases (Maven Phases)
+Cada fase possui objetivos (Maven Goals)
+
+Etapas do Ciclo de Vida:
+Default Lifecycle - Ciclo Principal, responsável pelo deploy local, composto por 23 fases (validate,compile, test-compile,package,install,deploy)
+Clean Lifecycle - Ciclo intermediário, composto por 3 fases (pre-clean, clean, post-clean)
+Site lifecycle - Ciclo Final, composto por 4 fases (pre-site, site, pos-site, site-deploy)
+***Todas essas fases são comandos da ferramenta***
+
+Projetos Multi-módulos:
+*
+
+Pugins:
+*
+
+
+
+
