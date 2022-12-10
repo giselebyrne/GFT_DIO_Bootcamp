@@ -1,7 +1,6 @@
 import java.time.LocalDate;
 
 import br.com.dio.desafio.dominio.Bootcamp;
-import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
@@ -43,7 +42,7 @@ public class Main {
         System.out.println("Contudos Inscritos Gisele: " + devGisele.getConteudosInscritos());
         System.out.println("Conteudos Concluidos Gisele: " + devGisele.getConteudosConcluidos());
 
-        System.out.println("Total de XP Gisele: " + devGisele.calcularTotalXp());
+        System.out.println("Total XP Gisele: " + devGisele.calcularTotalXp());
 
         System.out.println("--------------------");
 
@@ -60,11 +59,7 @@ public class Main {
         System.out.println("Conteudos Inscritos Joao: " + devJoao.getConteudosInscritos());
         System.out.println("Conteudos Concluidos Joao: " + devJoao.getConteudosConcluidos());
 
-        System.out.println("Total de XP do Dev Joao: " + devJoao.calcularTotalXp());
-        
-        // System.out.println(curso1);
-        // System.out.println(curso2);
-        // System.out.println(mentoria);
+        System.out.println("Total XP Joao: " + devJoao.calcularTotalXp());
 
         // Polimorfismo - Tudo que tem em Conteudo tem em Curso. Mas nem tudo que tem em Curso tem em Conteudo
         // É possivel pq Conteudo é mãe de Curso
