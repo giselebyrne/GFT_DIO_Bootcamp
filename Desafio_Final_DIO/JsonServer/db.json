@@ -1,0 +1,201 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$RasZAjp5ILvutyNjrmlePOVxYYopN2shYmFfCV/6PFJkvY3ndBVre",
+      "id": 1
+    },
+    {
+      "email": "myrela@mail.com",
+      "password": "$2a$10$TUG1CuzikWFhsOqwQh/EQOcZVSZuheGnkg59v9YBoJ4ITDnZbHlzm",
+      "id": 2
+    },
+    {
+      "email": "myrelaa@mail.com",
+      "password": "$2a$10$Y6BTPyuRtr.Q/8h0.KpivuykljbflgIJ3PauZCtIO9EkVQLDr9ElO",
+      "id": 3
+    },
+    {
+      "email": "myrelacaroline@mail.com",
+      "password": "$2a$10$aLZ3Vu8U46z2vQMR/KOP8O29kv.8oXWa/HcXg/3rCniMD5R/Z/6vi",
+      "id": 4
+    }
+  ],
+  "bookings": [
+    {
+      "booking": {
+        "firstname": "Myrela",
+        "lastname": "Caroline",
+        "totalprice": 456,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2020-04-01",
+          "checkout": "2020-04-11"
+        },
+        "additionalneeds": "Breakfast",
+        "id": 2
+      }
+    },
+    {
+      "lastname": "Hills",
+      "firstname": "Elza",
+      "totalprice": 39313.56,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 3
+    },
+    {
+      "lastname": "Prosacco",
+      "firstname": "Archie",
+      "totalprice": 60700.69,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 4
+    },
+    {
+      "lastname": "Barros",
+      "firstname": "Myrela",
+      "totalprice": 12896.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-15"
+      },
+      "additionalneeds": "",
+      "id": 6
+    },
+    {
+      "lastname": "Barros",
+      "firstname": "Myrela",
+      "totalprice": 12896.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-15"
+      },
+      "additionalneeds": "",
+      "id": 7
+    },
+    {
+      "lastname": "Cronin",
+      "firstname": "Cletus",
+      "totalprice": 51400.57,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 8
+    },
+    {
+      "lastname": "Barros",
+      "firstname": "Myrela",
+      "totalprice": 12896.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-15"
+      },
+      "additionalneeds": "",
+      "id": 9
+    },
+    {
+      "lastname": "Walter",
+      "firstname": "Taylor",
+      "totalprice": 83062.68,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 10
+    },
+    {
+      "lastname": "Barros",
+      "firstname": "Myrela",
+      "totalprice": 12896.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-15"
+      },
+      "additionalneeds": "",
+      "id": 11
+    },
+    {
+      "lastname": "Larson",
+      "firstname": "Hildegarde",
+      "totalprice": 21440.66,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 13
+    },
+    {
+      "lastname": "Barros",
+      "firstname": "Myrela",
+      "totalprice": 12896.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-15"
+      },
+      "additionalneeds": "",
+      "id": 14
+    },
+    {
+      "lastname": "Turcotte",
+      "firstname": "Sunny",
+      "totalprice": 83221.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 15
+    },
+    {
+      "lastname": "Rutherford",
+      "firstname": "Milan",
+      "totalprice": 85189.74,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-03"
+      },
+      "additionalneeds": "",
+      "id": 16
+    },
+    {
+      "lastname": "Barros",
+      "firstname": "Myrela",
+      "totalprice": 12896.88,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2018-01-02",
+        "checkout": "2018-01-15"
+      },
+      "additionalneeds": "",
+      "id": 17
+    }
+  ],
+  "ping": [
+    {
+      "Resposta": "Servidor Funcionando!"
+    }
+  ]
+}
